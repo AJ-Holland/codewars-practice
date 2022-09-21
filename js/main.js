@@ -2,15 +2,15 @@
 //really need to find a better way to organize this
 
 //9/3/2022
-// function typeValidation(variable, type) {
-//   // Your code should be here ;) 
-//   if(typeof(variable)===type){
-//     return(true)
-//   }
-//   else{
-//     return(false)
-//   }
-// }
+function typeValidation(variable, type) {
+  // Your code should be here ;) 
+  if(typeof(variable)===type){
+    return(true)
+  }
+  else{
+    return(false)
+  }
+}
 // describe("Basic Tests", function() {
 //   Test.assertEquals(typeValidation(42, "number"), true);
 //   Test.assertEquals(typeValidation("42", "number"), false);
@@ -35,13 +35,13 @@
 // Note: base is a non-negative number, factor is a positive number.
 
 //Solution
-// function factorOfBase(base, factor )
-// {
-//   if(base%factor === 0){
-//     return(true)
-//   }
-//   return(false)
-// }
+function factorOfBase(base, factor )
+{
+  if(base%factor === 0){
+    return(true)
+  }
+  return(false)
+}
 
 // factorOfBase()
 
@@ -59,14 +59,14 @@
 
   //////
 //   Solution
-// function boolToWord( bool ){
-//   if(bool == true){
-//     return 'Yes'
-//   }
-//   else{
-//     return 'No'
-//   }
-// }
+function boolToWord( bool ){
+  if(bool == true){
+    return 'Yes'
+  }
+  else{
+    return 'No'
+  }
+}
 
 // 9/5/22
 
@@ -85,10 +85,10 @@
 
 // Solution
 //the '/T/g' changes it globally
-// function DNAtoRNA(dna) {
+function DNAtoRNA(dna) {
   // create a function which returns an RNA sequence from the given DNA sequence
-//   return(dna.replace(/T/g,'U'))
-// }
+  return(dna.replace(/T/g,'U'))
+}
 
 // 9/5/22
 // Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
@@ -171,19 +171,19 @@
 // });
 
 // solution
-// function betterThanAverage(classPoints, yourPoints) {
+function betterThanAverage(classPoints, yourPoints) {
 //   // Your code here
   // mine
-//   let total = 0
-//   classPoints.forEach( indexValue => total += indexValue )
-//   let avg = total/classPoints.length
+  let total = 0
+  classPoints.forEach( indexValue => total += indexValue )
+  let avg = total/classPoints.length
   
-//   if(yourPoints > avg){
-//     return true
-//   } 
-//   return false
+  if(yourPoints > avg){
+    return true
+  } 
+  return false
 
-// }
+}
 
 // top
 // function betterThanAverage(classPoints, yourPoints) {
@@ -222,13 +222,13 @@
 // Complete the solution so that it reverses the string passed into it.
 
 // Solution
-// function solution(str){
-//   let newStr = ""
-//   for(let i = str.length-1; i >= 0; i--){
-//       newStr += str[i]
-//   }
-//   return(newStr)  
-// }
+function solution(str){
+  let newStr = ""
+  for(let i = str.length-1; i >= 0; i--){
+      newStr += str[i]
+  }
+  return(newStr)  
+}
 
 // Most popular
 // function solution(str){
@@ -256,22 +256,22 @@
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
-// function smash (words) {
-//     let displayText = ""
-//     if(words[0] == null){
-//         //if blank, return blank
-//         return displayText
-//     }
-//     for(let i =0; i < words.length; i++){
-//         displayText += words[i] + " "
-//         if(i == words.length-1){
-//             displayText = displayText.slice(0,-1)
-//         }
-//     }
-//     return displayText
+function smash (words) {
+    let displayText = ""
+    if(words[0] == null){
+        //if blank, return blank
+        return displayText
+    }
+    for(let i =0; i < words.length; i++){
+        displayText += words[i] + " "
+        if(i == words.length-1){
+            displayText = displayText.slice(0,-1)
+        }
+    }
+    return displayText
 
-//     return words.join()
-//  };
+    return words.join()
+ };
 
 //  Opposites Attract
 //  Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
@@ -292,16 +292,16 @@
 // 35231 => [1,3,2,5,3]
 // 0 => [0]
 
-// function digitize(n) {
-//     //code here
-//     //reverse number
-//     //break number into array
+function digitize(n) {
+    //code here
+    //reverse number
+    //break number into array
     
-//     let arr = String(n).split("").reverse().map(x => Number(x))
-//     return arr
+    let arr = String(n).split("").reverse().map(x => Number(x))
+    return arr
 
-//     // return String(n).split('').map(Number).reverse()
-//   }
+    // return String(n).split('').map(Number).reverse()
+  }
 
 // Beginner Paperwork
 // Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
@@ -313,9 +313,9 @@
 // n=-5, m=5:  0
 // Waiting for translations and Feedback! Thanks!
 
-// function paperwork(n, m) {
-//   return n < 0 ||m < 0 ? 0 : n*m
-// }
+function paperwork(n, m) {
+  return n < 0 ||m < 0 ? 0 : n*m
+}
 
 // Personalized Message
 // Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
@@ -326,10 +326,10 @@
 // name equals owner	'Hello boss'
 // otherwise	'Hello guest'
 
-// function greet (name, owner) {
-//     // Add code here
-//     return name === owner ? "Hello boss" : "Hello guest"
-//   }
+function greet (name, owner) {
+
+    return name === owner ? "Hello boss" : "Hello guest"
+  }
 
 // 9/17/22
 // Find the first non-consecutive Number
@@ -351,14 +351,14 @@
 //   })
 // })
 
-// function firstNonConsecutive (arr) {
-//   for(let i = 0; i < arr.length-1; i++){
-//     if(arr[i] + 1 !== arr[i+1]){
-//       return arr[i+1]
-//     }
-//   }
-//   return null
-// }
+function firstNonConsecutive (arr) {
+  for(let i = 0; i < arr.length-1; i++){
+    if(arr[i] + 1 !== arr[i+1]){
+      return arr[i+1]
+    }
+  }
+  return null
+}
 
 // 9/17/22
 // Categorize New Member
@@ -377,15 +377,15 @@
 // input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
-// function openOrSenior(data){
-//   for(let i = 0; i < data.length;i++){
-//     if(data[i][0] < 55 || data[i][1] <= 7){
-//       return 'Open'
-//     }else{
-//       return 'Senior'
-//     }
-//   }
-// }
+function openOrSenior(data){
+  for(let i = 0; i < data.length;i++){
+    if(data[i][0] < 55 || data[i][1] <= 7){
+      return 'Open'
+    }else{
+      return 'Senior'
+    }
+  }
+}
 
 // kyu7
 // Highest and Lowest
@@ -401,12 +401,25 @@
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
-function highAndLow(numbers){
-  //split the string into array elements seperated by the "spaces"
-  //map the array string elements into number elements
-  //sort from high to low
-  //put it back into a string
-  let arr = numbers.split(" ").map(item => Number(item)).sort((a,b) => a - b)
-  return String(arr[arr.length - 1] + " " + arr[0])
-}
+// function highAndLow(numbers){
+//   //split the string into array elements seperated by the "spaces"
+//   //map the array string elements into number elements
+//   //sort from high to low
+//   //put it back into a string
+//   let arr = numbers.split(" ").map(item => Number(item)).sort((a,b) => a - b)
+//   return String(arr[arr.length - 1] + " " + arr[0])
+// }
 
+// 9/21/22
+// Square(n) Sum
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+function squareSum(numbers){
+  let sum = 0
+  numbers.forEach( numInside => {
+    sum += Math.pow(numInside, 2)
+  });
+  return sum
+}
