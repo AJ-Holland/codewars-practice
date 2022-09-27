@@ -48,4 +48,4 @@ function deleteNth(arr,n){
         }
     }
     return ans
-  }
+}
