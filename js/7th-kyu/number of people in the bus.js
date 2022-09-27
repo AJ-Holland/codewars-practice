@@ -43,8 +43,18 @@
 // number([[0,0]])  0
 //
 // P
+// int total
+// loop through the whole arr
+// add the first element in the array to total
+// subtract the second
+// return total
 //
 
 var number = function(busStops){
-    // Good Luck!
+    let n = 0
+    for(let i = 0; i < busStops.length; i++){
+        n += busStops[i][0]
+        n -= busStops[i][1]
+    }
+    return n
   }

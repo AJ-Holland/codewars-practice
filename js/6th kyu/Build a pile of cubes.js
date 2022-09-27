@@ -34,15 +34,24 @@
 // int total
 // int interations
 // while total < m keep going?
-// total = 0
-// for loop, looping # of iterations
-// total adds n-i**3 each iteration
+// total adds iteration**3 each iteration
 // iteration + 1
 // conditional total = m
+// return iteration? // fix iteration that is returned
 // conditional total > m
+// return -1
 // 
 
 function findNb(m) {
-
-    return (-1);
+    let total = 0
+    let iterations = 0
+    while(total < m){
+        iterations += 1
+        total += iterations**3
+    }
+    if(total === m){
+        return iterations
+    }else{
+        return (-1)
+    }
 }
