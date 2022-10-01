@@ -26,10 +26,15 @@
 //  return string
 
 function solution(string) {
-    if(str === ''){
-        return ''
-    }
+
     let str = string.split('')
 
-    for(let i = 0; i < str.length )
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === str[i].toUpperCase()){
+            str[i] = ' '+ str[i]
+        }
+    }
+    return str.join('')
 }
+
+// this makes me feel dirty because its in no way right
