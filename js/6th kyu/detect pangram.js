@@ -44,9 +44,10 @@ function isPangram(string){
     const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
     for(let i = 0; i < letters.length; i++){
-        if(!string.includes(letters[i])){
-            return letters[i]
+        if(!string.toLowerCase().includes(letters[i])){
+            return false
         }
     }
+    
     return true
   }
